@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de mensajes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/styles/style.css">
+</head>
+
+
+<body>
+    <header>
+        <img src="./assets/png/Logo.png" alt="logo alura">
+    </header>
+    <main>
+        <form class="form_section">
+            <textarea class="form_input" id="mensaje" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+    
+            <div class="submit_container">
+            <div class="alert_msj"><img src="./assets/png/alerta.png" alt="alerta icono">
+                <span>Solo letras minúsculas y sin acentos</span></div>
+            </div>
+            <div class="container">
+            <input class="form_btn" type="submit" value="Encriptar">
+            <input class="form_btn-secundary" type="submit" value="Desencriptar">
+        </form>
+    </div>
+        <aside class="result">
+            <img src="./assets/png/humano.png" alt="imagen de humano" class="result_img">
+            <div class="result_container">
+                <h3 class="resul_title">Ningún mensaje fue encontrado</h3>
+                <p class="result_text">Ingresa el texto que desees encriptar o desencriptar.</p>
+                <button class="result_btn form_btn form_btn-secundary hidden">copiar
+                </button>
+            </div>
+            </div>
+        </aside>
+    </main>
+    <script src="./encriptador.js"></script>
+</body>
+</html>
